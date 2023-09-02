@@ -79,10 +79,10 @@ p {
   padding: 5vw;
   color: white;
   font-family: "Roboto";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-size: 0.9em;
+  .footer-header {
+    font-size: 1em;
+  }
   .footer-info {
     .footer-info-link {
       margin-top: 10px;
@@ -90,9 +90,8 @@ p {
       flex-direction: column;
 
       color: white;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 24px; /* 171.429% */
+      font-size: 0.9em;
+      line-height: 24px;
       letter-spacing: 0.42px;
       text-decoration: none; /* Убираем подчёркивание */
     }
@@ -102,12 +101,14 @@ p {
     flex-direction: column;
 
     .footer-contacts-link {
-      margin-top: 10px;
       display: flex;
       flex-direction: row;
       .footer-contacts-link-p {
-        margin-left: 10px;
+        margin-left: 15px;
         color: white;
+        font-size: 0.9em;
+        line-height: 24px;
+        letter-spacing: 0.42px;
       }
     }
   }
@@ -116,7 +117,7 @@ p {
       margin-top: 10px;
       display: flex;
       flex-direction: row;
-      .footer-social-link-img{
+      .footer-social-link-img {
         padding-right: 10px;
       }
     }
@@ -125,11 +126,54 @@ p {
 
 /* MAIN-PAGE */
 .main {
+  display: flex;
+  flex-direction: column;
 
-  .main-1-form{
-    width: 30vw;
-    .main-1-img{
+  .main-1-4 {
+    margin: 25px;
+    width: 80vw;
+    .main-1-4-img {
+      display: grid;
+      grid-template-columns: 40vw 1fr;
+      gap: 15px;
+    }
+    .main-1-4-button {
+      margin-top: 15px;
+      .main-1-4-button-link {
+        padding: 15px;
+        background: var(--Gray-1, #333);
+        color: white;
+        font-family: "Roboto";
+        font-size: 0.8em;
+        letter-spacing: 2.4px;
+        text-decoration: none; /* Убираем подчёркивание */
+      }
+    }
+  }
+  .main-1-5 {
+    margin: 25px;
+    width: 80vw;
+
+    display: flex;
+    flex-direction: column;
+
+    .main-1-5-form {
+      width: 30vw;
+    }
+    .main-1-5-img {
       width: 60vw;
+    }
+    .main-1-5-button {
+      margin-top: 15px;
+      .main-1-5-button-link {
+        padding: 15px;
+        background: var(--Gray-1, #333);
+        color: white;
+        font-family: "Roboto";
+        font-size: 0.8em;
+        letter-spacing: 2.4px;
+        text-decoration: none; /* Убираем подчёркивание */
+      }
     }
   }
 }
