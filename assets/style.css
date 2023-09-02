@@ -130,15 +130,15 @@ p {
   flex-direction: column;
 
   .main-1-4 {
+    display: flex;
+    flex-direction: column;
     margin: 25px;
-    width: 80vw;
     .main-1-4-img {
-      display: grid;
-      grid-template-columns: 40vw 1fr;
-      gap: 15px;
+      display: flex wrap;
     }
     .main-1-4-button {
       margin-top: 15px;
+      align-self: end;
       .main-1-4-button-link {
         padding: 15px;
         background: var(--Gray-1, #333);
@@ -146,25 +146,35 @@ p {
         font-family: "Roboto";
         font-size: 0.8em;
         letter-spacing: 2.4px;
+        text-transform: uppercase;
         text-decoration: none; /* Убираем подчёркивание */
       }
     }
   }
   .main-1-5 {
     margin: 25px;
-    width: 80vw;
 
     display: flex;
     flex-direction: column;
 
     .main-1-5-form {
-      width: 30vw;
-    }
-    .main-1-5-img {
-      width: 60vw;
+      display: grid;
+      grid-template-columns: 30vw 50vw;
+      
+      .main-1-5-form-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .main-1-5-form-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
     }
     .main-1-5-button {
       margin-top: 15px;
+      align-self: end;
       .main-1-5-button-link {
         padding: 15px;
         background: var(--Gray-1, #333);
@@ -172,6 +182,7 @@ p {
         font-family: "Roboto";
         font-size: 0.8em;
         letter-spacing: 2.4px;
+        text-transform: uppercase;
         text-decoration: none; /* Убираем подчёркивание */
       }
     }
