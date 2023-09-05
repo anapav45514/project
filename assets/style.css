@@ -225,10 +225,10 @@ p {
 
 /* PROJECT-PAGE */
 .prj_wrapper {
-  width: 1440px;
+  width: 100vw;
 }
 .main_prj_wrapper {
-width: 1170px;
+width: 80vw;
 height: 214px;
 }
 
@@ -238,7 +238,7 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 box-sizing: border-box;
-padding-left: 135px;
+padding-left: 7vw;
 }
 
 .main_prj_wrapper_header__h1 {
@@ -261,21 +261,24 @@ margin: 0;
       }
 
 .main_prj_wrapper_sections {
-  width: 1170px;
-  padding-left: 135px;
+  width: 80vw;
+  padding-left: 6vw;
 }      
 .main_prj_wrapper_section {
-   display: flex;
-   padding: 20px;
+ 
+  margin: 0px;
+  display: flex;
+  align-items: stretch;
+  padding: 20px;
     }
     
 .main_prj_wrapper_section__img {
-width: 670px;
+width: 57vw;
 height: 435px;
       }
 
 .main_prj_wrapper_section__describtion {
-  width: 500px;
+  width: 43vw;
  padding: 30px;
   display:flex;
   flex-direction: column;
@@ -289,11 +292,11 @@ font-size: 40px;
 font-style: normal;
 font-weight: 300;
 line-height: normal;
-width: 440px;
+width: 88vw;
 }
 
 .main_prj_wrapper_section__text {
-width: 400px;
+width: 35vw;
 font-family: "Roboto";
 height: 120px;
 color: #000;
@@ -324,7 +327,6 @@ text-transform: uppercase;
 .main_prj_wrapper_info__icon {
 width: 24px;
 height: 24px;
-flex-shrink: 0;
 }
 /* CERTIFICATIONS-PAGE */
 .certifications {
@@ -332,4 +334,17 @@ flex-shrink: 0;
 
 /* CONTACTS-PAGE */
 .contacts {
+}
+@media screen and (max-width: 600px) {
+  .main_prj_wrapper_section {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+  }  
+  .main_prj_wrapper_section__text {
+    display: none;
+  }
 }
