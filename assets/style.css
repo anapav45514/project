@@ -145,11 +145,11 @@ p {
   height: 100%;
   object-fit: cover;
 }
-.main-prj_button {
+.main_prj_button {
       margin-top: 15px;
       align-self: end;
 }
-.main-1-4-button-link {
+.main_prj_button_link {
   padding: 15px;
   background: var(--Gray-1, #333);
   color: white;
@@ -168,9 +168,8 @@ p {
 .main_contact_form {
   display: grid;
   grid-template-columns: 30vw 60vw;
-  height: ;
 }
-.main_contact_form {
+.main_contact_form_add {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
