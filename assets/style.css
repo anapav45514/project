@@ -532,4 +532,19 @@
   .main_prj_wrapper_section__text {
     display: none;
   }
+
+
+    /* CERTIFICATIONS-PAGE */
+    .certifications {
+      display: flex;
+      flex-direction: column;
+    }
+    /* CONTACTS-PAGE */
+    .contact_page{
+      
+    }
+    .contact_page_section {
+      display: flex;
+      flex-direction: row;
+    }
 }
