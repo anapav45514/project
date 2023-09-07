@@ -113,6 +113,8 @@
   
     .footer {
       background: #2c2c2c;
+      bottom: 0px;
+      width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -486,7 +488,7 @@
     }
     /* CONTACTS-PAGE */
     .contact-page {
-
+      width: 100%;
     }
     .contact_page_button_link{
       padding: 15px;
@@ -497,6 +499,9 @@
       letter-spacing: 2.4px;
       text-transform: uppercase;
       text-decoration: none; /* Убираем подчёркивание */
+    }
+    .contact_page_section_map{
+      border: 1px solid #000;
     }
   }
   @media screen and (max-width: 959px) {
