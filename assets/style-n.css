@@ -472,11 +472,31 @@
       width: 24px;
       height: 24px;
     }
+    /* PROJECT-PAGE SAMPLE 1*/
+    
+    .prj_smpl_section{
+      display: flex;
+    }
+    .prj_smpl_section_discription {
+      display: flex;
+      flex-direction: row;
+    }
     /* CERTIFICATIONS-PAGE */
     .certifications {
     }
     /* CONTACTS-PAGE */
-    .contacts {
+    .contact-page {
+
+    }
+    .contact_page_button_link{
+      padding: 15px;
+      background: var(--Gray-1, #333);
+      color: white;
+      font-family: "Roboto";
+      font-size: 0.8em;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      text-decoration: none; /* Убираем подчёркивание */
     }
   }
   @media screen and (max-width: 959px) {
