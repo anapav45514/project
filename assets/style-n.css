@@ -167,7 +167,6 @@
         min-height: 100vh;
         flex: 1;
     }
-
     .main_block { /* project lorum */
         display: flex;
         flex-direction: column;
@@ -175,34 +174,34 @@
         margin-left: 10vw;
         margin-right: 10vw;
     }
-        .main_block_img {
+      .main_block_img {
           display: grid;
           justify-self: center;
           grid-gap: 50px;
           grid-template-columns: 30vw, 70vw;
           grid-template-rows: 200px 200px 100px 100px 20px;
           grid-auto-flow: row;
-        }
-            .item_1 { /* project lorum */
+      }
+        .item_1 { /* project lorum */
             grid-column: 1;
             grid-row: 2 / 3;
-          }
-          .item_2 { /* arrows */
+        }
+        .item_2 { /* arrows */
             
             grid-column: 1;
             grid-row: 3 / 4;
             align-self: center;
             
-          }
-          .item_3 { /* numbers */
+        }
+        .item_3 { /* numbers */
             grid-column: 1;
             grid-row: 4 / 5;
-          }
-          .item_4 { /* button */
+        }
+        .item_4 { /* button */
             grid-column: 2;
             grid-row: 5 / 6;
             justify-items: start;
-          }
+        }
           .main_block_img_pic { /* main picture */
             grid-column: 2;
             grid-row: 1 / 6;
@@ -213,7 +212,7 @@
           align-items: center;
           justify-self: center;
         }
-            .main_block_button_link {
+          .main_block_button_link {
               padding: 15px;
               background: var(--Gray-1, #ffffff);
               color: rgba(51, 51, 51, 1);
@@ -223,9 +222,8 @@
               text-align: center;
               text-transform: uppercase;
               text-decoration: none; /* Убираем подчёркивание */
-            }
-    
-            .main_abt { /* about */
+          }
+    .main_abt { /* about */
                 display: flex;
                 flex-direction: column;
                 height: 465px;
@@ -234,30 +232,30 @@
                 margin-right: 10vw;
                 background-color: rgba(251, 251, 251, 1);
                 align-content: center;
-            }
-                .main_abt_img {
+    }
+      .main_abt_img {
                   display: grid;
                   justify-content: center;
                   grid-gap: 15px;
                   grid-template-columns: repeat(3, minmax(70px, 20vw));
                   grid-template-rows: repeat(2, 17vw);
                   margin-top: 30px;
-                }
-                  .main_abt_img_2 {
+      }
+        .main_abt_img_2 {
                     margin-top: 30px;
                     grid-column: 2;
                     grid-row: 1 / 3;
-                  }
-                  .main_abt_img_pic {
+        }
+        .main_abt_img_pic {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
-                  }
+        }
                 
-                .main_abt_button { 
+      .main_abt_button { 
                   margin-top: 70px; 
-                }
-                    .main_abt_button_link {
+      }
+        .main_abt_button_link {
                       padding: 15px;
                       background: var(--Gray-1, #ffffff);
                       color: rgba(51, 51, 51, 1);
@@ -266,25 +264,25 @@
                       letter-spacing: 2.4px;
                       text-transform: uppercase;
                       text-decoration: none; /* Убираем подчёркивание */
-                    }    
+        }    
 
-                    .main_msn { /* main mission */
+    .main_msn { /* main mission */
                         display: flex;
                         flex-direction: column;
                         margin-top: 25px;
                         margin-left: 10vw;
                         margin-right: 10vw;
-                    }
-                            .main_msn_img {
+    }
+      .main_msn_img {
                           display: grid;
                           grid-gap: 25px;
                           grid-template-columns: 110px 1fr 110px 1fr;
                           grid-template-rows: 1fr;
-                            }
-                          .main_msn_img_pic {
+      }
+        .main_msn_img_pic {
                             width: 100%;
                             height: 100%;
-                          }
+        }
 
     .main_prj {
       display: flex;
@@ -293,22 +291,22 @@
       margin-left: 10vw;
       margin-right: 10vw;
     }
-    .main_prj_img {
+      .main_prj_img {
       display: grid;
       grid-gap: 15px;
       grid-template-columns: repeat(auto-fit, minmax(100px, 30vw));
       grid-template-rows: repeat(2, 20vw);
-    }
-    .main_prj_img_pic {
+      }
+        .main_prj_img_pic {
       width: 100%;
       height: 100%;
       object-fit: cover;
-    }
+        }
     .main_prj_button {
       margin-top: 15px;
       align-self: end;
     }
-    .main_prj_button_link {
+      .main_prj_button_link {
       padding: 15px;
       background: var(--Gray-1, #333);
       color: white;
@@ -317,7 +315,7 @@
       letter-spacing: 2.4px;
       text-transform: uppercase;
       text-decoration: none; /* Убираем подчёркивание */
-    }
+      }
     .main_contact {
         margin-top: 25px;
         margin-left: 10vw;
@@ -325,56 +323,55 @@
       display: flex;
       flex-direction: column;
     }
-    .main_contact_form {
+      .main_contact_form {
       display: grid;
       grid-template-columns: 30vw 60vw;
-    }
-    .main_contact_form_add {
+      }
+        .main_contact_form_add {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-    }
-    .main_contact_form_img {
+        }
+        .main_contact_form_img {
       display: flex;
       width: 100%;
       height: 100%;
       object-fit: cover;
-    }
-    /*Parameters for input area*/
-    #Name,
-    #Number,
-    #Email,
-    #addText {
-      padding: 1vw;
-    }
-    #Textarea {
-      padding: 1vw;
-    }
-    .form-control {
-      color: #8d8d8d;
-      font-family: Roboto;
-      font-size: 0.9em;
-      border: none;
-      margin-top: 0.5vw;
-      margin-bottom: 0.5vw;
-      margin-right: 0.5vw;
-      background: #f3f3f3;
-    }
-    .main_contact_button {
+        }
+            /*Parameters for input area*/
+              #Name,
+              #Number,
+              #Email,
+              #addText {
+                padding: 1vw;
+              }
+              #Textarea {
+                padding: 1vw;
+              }
+              .form-control {
+                color: #8d8d8d;
+                font-family: Roboto;
+                font-size: 0.9em;
+                border: none;
+                margin-top: 0.5vw;
+                margin-bottom: 0.5vw;
+                margin-right: 0.5vw;
+                background: #f3f3f3;
+              }
+      .main_contact_button {
       margin-top: 35px;
       margin-bottom: 35px;
-      
-    }
-    .main_contact_button_link {
-      padding: 15px;
-      background: var(--Gray-1, #333);
-      color: white;
-      font-family: "Roboto";
-      font-size: 0.8em;
-      letter-spacing: 2.4px;
-      text-transform: uppercase;
-      text-decoration: none; /* Убираем подчёркивание */
-    }
+      }
+        .main_contact_button_link {
+          padding: 15px;
+          background: var(--Gray-1, #333);
+          color: white;
+          font-family: "Roboto";
+          font-size: 0.8em;
+          letter-spacing: 2.4px;
+          text-transform: uppercase;
+          text-decoration: none; /* Убираем подчёркивание */
+        }
   
     /* GALLERY-PAGE */
     .gallery {
@@ -474,23 +471,28 @@
       width: 24px;
       height: 24px;
     }
+
+
     /* PROJECT-PAGE SAMPLE 1*/
-    
     .prj_smpl_section{
       display: flex;
     }
-    .prj_smpl_section_discription {
+      .prj_smpl_section_discription {
       display: flex;
       flex-direction: row;
-    }
+      }
+
+
     /* CERTIFICATIONS-PAGE */
     .certifications {
     }
+
+
     /* CONTACTS-PAGE */
     .contact-page {
       width: 100%;
     }
-    .contact_page_button_link{
+      .contact_page_button_link{
       padding: 15px;
       background: var(--Gray-1, #333);
       color: white;
@@ -499,11 +501,13 @@
       letter-spacing: 2.4px;
       text-transform: uppercase;
       text-decoration: none; /* Убираем подчёркивание */
-    }
-    .contact_page_section_map{
+      }
+      .contact_page_section_map{
       border: 1px solid #000;
-    }
+      }
   }
+
+  
   @media screen and (max-width: 959px) {
   
     /* COMMON STYLE for Navigation and Footer*/
