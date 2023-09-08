@@ -11,15 +11,9 @@
 - [Адаптивная верстка]
 - ...
 
-### Требования
-Для установки и запуска проекта, необходим [NodeJS](https://nodejs.org/) v8+.
-
-
 ## Команда проекта
 
 - [Irina Shishkanova](https://github.com/lobkisira) — Front-End Engineer
 - [Maria Levashova](https://github.com/mashblin) — Front-End Engineer
 - [Taisia](https://github.com/TaisNch) — Front-End Engineer
 
-## Источники
-Если вы чем-то вдохновлялись, расскажите об этом в этом разделе: где брали идеи, какие туториалы смотрели, исходники кода. 
