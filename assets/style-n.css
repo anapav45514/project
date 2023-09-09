@@ -51,16 +51,16 @@
     /* легкий */
     color: var(rgba(0, 0, 0, 1));
     font-family: "Roboto-lihgt";
-    font-size: 16px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 300;
-    line-height: 25px; /* 100% */
+    line-height: 2em; 
   }
   .text_reg {
     /* регуляр*/
     color: var(rgba(0, 0, 0, 1));
     font-family: "Roboto";
-    font-size: 22px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 300;
     line-height: 36px; /* 100% */
@@ -160,60 +160,40 @@
   .main {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    flex: 1;
   }
   .main_block {
     /* project lorum */
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main_block_info {
+    display: flex;
     flex-direction: column;
-    margin-top: 25px;
+    align-content: start;
+    justify-content: space-around;
+  }
+  .main_block_info_pics {
     margin-left: 10vw;
-    margin-right: 10vw;
   }
-  .main_block_img {
-    display: grid;
-    justify-self: center;
-    grid-gap: 50px;
-    grid-template-columns: 30vw, 70vw;
-    grid-template-rows: 200px 200px 100px 100px 20px;
-    grid-auto-flow: row;
+  .main_block_info_pics_arrows {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10vw;
+    padding-bottom: 5vw;
   }
-  .header {
-    /* project lorum */
-    grid-column: 1;
-    grid-row: 2 / 3;
+  .main_block_info_pics_nmbrs {
+    padding-bottom: 10px;
   }
-  .item_2 {
-    /* arrows */
-
-    grid-column: 1;
-    grid-row: 3 / 4;
-    align-self: center;
-  }
-  .item_3 {
-    /* numbers */
-    grid-column: 1;
-    grid-row: 4 / 5;
-  }
-  .item_4 {
-    /* button */
-    grid-column: 2;
-    grid-row: 5 / 6;
-    justify-items: start;
+  .main_block_img{
+    display: flex;
+    flex-direction: column;
   }
   .main_block_img_pic {
-    /* main picture */
-    grid-column: 2;
-    grid-row: 1 / 6;
-    width: 100%;
-    height: 100%;
+    display: flex;
   }
-  .main_block_button {
-    align-items: center;
-    justify-self: center;
-  }
-  .main_block_button_link {
+  .main_block_img_button_link {
     padding: 15px;
     background: var(--Gray-1, #ffffff);
     color: rgba(51, 51, 51, 1);
@@ -227,35 +207,33 @@
   .main_abt {
     /* about */
     display: flex;
-    flex-direction: column;
-    height: 465px;
-    margin-top: 45px;
+    flex-direction: row;
     margin-left: 10vw;
-    margin-right: 10vw;
+    margin-top: 5vw;
     background-color: rgba(251, 251, 251, 1);
-    align-content: center;
   }
-  .main_abt_img {
-    display: grid;
-    justify-content: center;
-    grid-gap: 15px;
-    grid-template-columns: repeat(3, minmax(70px, 20vw));
-    grid-template-rows: repeat(2, 17vw);
-    margin-top: 30px;
+  .main_abt_img_block1 {
+    display: flex;
+    flex-direction: column;
+    padding: 3vw 3vw 3vw 3vw;
   }
-  .main_abt_img_2 {
-    margin-top: 30px;
-    grid-column: 2;
-    grid-row: 1 / 3;
+  .main_abt_img_block1 > div > img {
+    padding-bottom: 15px;
   }
-  .main_abt_img_pic {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .main_abt_img_block2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vw;
   }
+  .main_abt_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 3vw 3vw 3vw 3vw;
 
-  .main_abt_button {
-    margin-top: 70px;
+  }
+  .main_abt_button{
+    margin-top: 2vw;
   }
   .main_abt_button_link {
     padding: 15px;
@@ -552,30 +530,30 @@
   }
   .header_h3 {
     color: var(rgba(0, 0, 0, 1));
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     font-family: "Roboto-Bold";
     font-size: 1em;
     font-style: normal;
     font-weight: 700;
-    line-height: 64px;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
   }
   .text_light {
     /* легкий */
     color: var(rgba(0, 0, 0, 1));
     font-family: "Roboto-lihgt";
-    font-size: 16px;
+    font-size: 0.9em;
     font-style: normal;
     font-weight: 300;
-    line-height: 25px; /* 100% */
+    line-height: 1em; /* 100% */
   }
   .text_reg {
     /* регуляр*/
     color: var(rgba(0, 0, 0, 1));
     font-family: "Roboto";
-    font-size: 22px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 300;
-    line-height: 36px; /* 100% */
+    line-height: 1.5em;
   }
   .nav {
     margin: 5vw;
@@ -628,7 +606,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: stretch;
     background: #2c2c2c;
     color: white;
     font-family: "Roboto";
@@ -674,57 +651,25 @@
     flex-direction: column;
   }
   .main_block {
-    /* project lorum */
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
-    margin-left: 10vw;
-    margin-right: 10vw;
   }
-  .main_block_img {
-    display: grid;
-    justify-self: center;
-    grid-gap: 50px;
-    grid-template-columns: 30vw, 70vw;
-    grid-template-rows: 200px 200px 100px 100px 20px;
-    grid-auto-flow: row;
-  }
-  .header {
-    /* project lorum */
-    grid-column: 1;
-    grid-row: 2 / 3;
-  }
-  .item_2 {
-    /* arrows */
 
-    grid-column: 1;
-    grid-row: 3 / 4;
-    align-self: center;
+  .main_block_info_pics_arrows {
+    display: none;
   }
-  .item_3 {
-    /* numbers */
-    grid-column: 1;
-    grid-row: 4 / 5;
-  }
-  .item_4 {
-    /* button */
-    grid-column: 2;
-    grid-row: 5 / 6;
-    justify-items: start;
+  .main_block_info_pics_nmbrs {
+    display: none;
   }
   .main_block_img_pic {
-    /* main picture */
-    grid-column: 2;
-    grid-row: 1 / 6;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    margin-left: 10vw;
+    height: 60vw;
   }
-  .main_block_button {
-    align-items: center;
-    justify-self: center;
-  }
-  .main_block_button_link {
+  .main_block_img_button_link {
     padding: 15px;
+    
+    margin-left: 10vw;
     background: var(--Gray-1, #ffffff);
     color: rgba(51, 51, 51, 1);
     font-family: "Roboto";
@@ -737,35 +682,24 @@
   .main_abt {
     /* about */
     display: flex;
-    flex-direction: column;
-    height: 465px;
-    margin-top: 45px;
+    flex-direction: row;
     margin-left: 10vw;
-    margin-right: 10vw;
+    margin-top: 5vw;
     background-color: rgba(251, 251, 251, 1);
-    align-content: center;
   }
-  .main_abt_img {
-    display: grid;
-    justify-content: center;
-    grid-gap: 15px;
-    grid-template-columns: repeat(3, minmax(70px, 20vw));
-    grid-template-rows: repeat(2, 17vw);
-    margin-top: 30px;
+  .main_abt_img_block1 {
+    display: none;
   }
-  .main_abt_img_2 {
-    margin-top: 30px;
-    grid-column: 2;
-    grid-row: 1 / 3;
+  .main_abt_img_block2 {
+    display: none;
   }
-  .main_abt_img_pic {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .main_abt_txt {
+    display: flex;
+    flex-direction: column;
+    padding: 3vw 3vw 3vw 3vw;
   }
-
-  .main_abt_button {
-    margin-top: 70px;
+  .main_abt_button{
+    margin-top: 5vw;
   }
   .main_abt_button_link {
     padding: 15px;
@@ -787,14 +721,12 @@
     margin-right: 10vw;
   }
   .main_msn_img {
-    display: grid;
-    grid-gap: 25px;
-    grid-template-columns: 110px 1fr 110px 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
   }
   .main_msn_img_pic {
-    width: 100%;
-    height: 100%;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
   }
 
   .main_prj {
