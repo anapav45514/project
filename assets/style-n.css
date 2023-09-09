@@ -904,7 +904,8 @@
   .prj_smpl_page_main_section_discription {
     display: flex;
     flex-direction: row;
-    padding-bottom: 1vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
   }
   .prj_smpl_page_main_section_img2{
     display: none;
