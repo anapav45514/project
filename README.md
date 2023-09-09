@@ -15,5 +15,5 @@
 
 - [Irina Shishkanova](https://github.com/lobkisira) — Front-End Engineer
 - [Maria Levashova](https://github.com/mashblin) — Front-End Engineer
-- [Taisia](https://github.com/TaisNch) — Front-End Engineer
+- [Taisia Nechitaylo](https://github.com/TaisNch) — Front-End Engineer
 
