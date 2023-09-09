@@ -469,11 +469,13 @@
 
   /* PROJECT-PAGE SAMPLE 1*/
   .prj_smple_page {
+    display: flex;
+    flex-direction: column;
   }
   .prj_smpl_page_main_section{
     display: flex;
     flex-direction: column;
-    margin: 10vw;
+    margin: 0vw 10vw 5vw 10vw;
   }
   .prj_smpl_page_main_section_img1{
     padding-bottom: 1vw;
@@ -483,11 +485,9 @@
     flex-direction: row;
     padding-bottom: 1vw;
   }
-
   .prj_smpl_page_main_section_img2{
     padding-right: 1vw;
   }
-
   .prj_smpl_page_main_section_img3{
     padding-bottom: 1vw;
   }
@@ -561,7 +561,6 @@
     font-weight: 700;
     line-height: 64px;
   }
-
   .text_light {
     /* легкий */
     color: var(rgba(0, 0, 0, 1));
@@ -581,17 +580,18 @@
     line-height: 36px; /* 100% */
   }
   .nav {
-    margin: 25px;
+    margin: 5vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+  .nav_logo{
+    display: none;
   }
   .nav_link {
-    position: relative;
-    padding: 0 10px;
     color: var(--gray-1, #333);
     font-family: "Roboto";
-    font-size: 0.7em;
+    font-size: 0.5em;
     font-style: normal;
     font-weight: 400;
     line-height: 0.7em; /* 100% */
@@ -626,11 +626,12 @@
   }
 
   .footer {
+    padding: 10vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: stretch;
     background: #2c2c2c;
-    padding: 5vw;
     color: white;
     font-family: "Roboto";
   }
@@ -639,30 +640,27 @@
   }
   .footer_info_link {
     display: flex;
-    flex-direction: column;
-    align-self: center;
-
+    flex-direction: row;
     color: white;
     font-size: 0.9em;
-    line-height: 2em;
-    letter-spacing: 0.42px;
     text-decoration: none; /* Убираем подчёркивание */
+    }
+  .footer_info_link > a{
+    padding-right: 10px;
   }
   .footer_contact {
     display: flex;
     flex-direction: column;
   }
+
   .footer_contact_link {
     display: flex;
     flex-direction: row;
-    align-self: center;
   }
   .footer_contact_link_p {
     margin-left: 15px;
     color: white;
     font-size: 0.9em;
-    line-height: 2em;
-    letter-spacing: 0.42px;
   }
   .footer_social_link {
     display: flex;
@@ -676,8 +674,6 @@
   .main {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    flex: 1;
   }
   .main_block {
     /* project lorum */
@@ -892,8 +888,6 @@
   .gallery_page{
     display: flex;
     flex-direction: column;
-
-
   }
   .gallery_page_container {
     margin: 0 10vw 10vw 10vw;
@@ -984,11 +978,13 @@
 
   /* PROJECT-PAGE SAMPLE 1*/
   .prj_smple_page {
+    display: flex;
+    flex-direction: column;
   }
   .prj_smpl_page_main_section{
     display: flex;
     flex-direction: column;
-    margin: 10vw;
+    margin: 0vw 10vw 5vw 10vw;
   }
   .prj_smpl_page_main_section_img1{
     padding-bottom: 1vw;
@@ -998,17 +994,20 @@
     flex-direction: row;
     padding-bottom: 1vw;
   }
-
   .prj_smpl_page_main_section_img2{
-    padding-right: 1vw;
+    display: none;
   }
-
   .prj_smpl_page_main_section_img3{
     padding-bottom: 1vw;
   }
 
   /* CERTIFICATIONS-PAGE */
   .certifications {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   /* CONTACTS-PAGE */
@@ -1016,18 +1015,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   .contact_page_info{
     display: flex;
-    flex-direction: row;
-
+    flex-direction: column;
+    margin-left: 10vw;
   }
   .contact_page_info_contacts{
     display: flex;
     flex-direction: column;
-    padding: 5vw;
   }
   .contact_page_info_button {
+    margin-top: 5vh;
     padding: 15px;
     background: var(--Gray-1, #333);
     color: white;
@@ -1038,6 +1038,11 @@
     text-decoration: none; /* Убираем подчёркивание */
   }
   .contact_page_map {
+    display: flex;
+    flex-direction: column;
     margin: 10vw;
+    width: 50vw;
+    border: 2px solid black;
+
   }
 }
