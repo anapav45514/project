@@ -383,12 +383,9 @@
     background: #C4C4C4;
   }
 
-
   /* PROJECT-PAGE */
   .prj_wrapper {
     width: 100vw;
-  }
-  .main_prj_wrapper {
   }
   .main_prj_wrapper_sections {
     padding-left: 10vw;
