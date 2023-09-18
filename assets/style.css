@@ -42,16 +42,6 @@
     line-height: 64px; /* 100% */
     margin-top: -50px;
   }
-  h3 {
-    color: var(rgba(0, 0, 0, 1));
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: "Roboto-Bold";
-    font-size: 1em;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 64px;
-  }
-
   .text-light {
     /* легкий */
     color: var(rgba(0, 0, 0, 1));
@@ -70,6 +60,15 @@
     font-weight: 300;
     line-height: 36px; /* 100% */
   }
+  .text-bold{
+        /* регуляр*/
+        color: var(rgba(0, 0, 0, 1));
+        font-family: "Roboto-bold";
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 36px; /* 100% */
+  }
   .nav {
     margin-top: 25px;
     margin-left: 10vw;
@@ -77,6 +76,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  .nav__logo{
+    margin-right: 30vw;
   }
   .nav__link {
     position: relative;
@@ -480,22 +482,23 @@
   }
 
   /* CONTACTS-PAGE */
-  .contact_page{
+  .contact-page{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  .contact_page_info{
+  .contact-page__info{
     display: flex;
     flex-direction: column;
-    margin-left: 10vw;
   }
-  .contact_page_info_contacts{
+  .contact-page__info-link{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin: 0vw 10vw 10vw 10vw;
   }
-  .contact_page_info_button {
+  .contact-page__info-button {
+    margin-top: 5vw;
     padding: 15px;
     background: var(--Gray-1, #333);
     color: white;
@@ -505,8 +508,11 @@
     text-transform: uppercase;
     text-decoration: none; /* Убираем подчёркивание */
   }
-  .contact_page_map {
+  .contact-page__map {
+    width: 100%;
     border: 2px solid #000;
+    margin: 3vw 0vw 3vw 3vw;
+
   }
 }
 
@@ -518,16 +524,7 @@
     flex-direction: column;
     margin-left: 10vw;
   }
-  .header_h1 {
-    color: var(--Gray-1, #333);
-    font-family: "Roboto-Bold";
-    font-size: 2.5em;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 64px; /* 100% */
-    margin-top: -50px;
-  }
-  .header_h2 {
+  .header__h1 {
     color: var(--Gray-4, #bdbdbd);
     font-family: "Roboto-light";
     font-size: 3em;
@@ -535,32 +532,41 @@
     font-weight: 300;
     line-height: 64px;
   }
-  .header_h3 {
-    color: var(rgba(0, 0, 0, 1));
+  .header__h1-bold{
+    color: var(--Gray-1, #333);
     font-family: "Roboto-Bold";
     font-size: 1em;
     font-style: normal;
     font-weight: 700;
-    padding-top: 3vw;
-    padding-bottom: 3vw;
+    line-height: 64px; /* 100% */
+    margin-top: -50px;
   }
-  .text_light {
+  .text-light {
     /* легкий */
     color: var(rgba(0, 0, 0, 1));
     font-family: "Roboto-lihgt";
-    font-size: 0.9em;
+    font-size: 1em;
     font-style: normal;
     font-weight: 300;
-    line-height: 1em; /* 100% */
+    line-height: 2em; 
   }
-  .text_reg {
+  .text-reg {
     /* регуляр*/
     color: var(rgba(0, 0, 0, 1));
     font-family: "Roboto";
     font-size: 1em;
     font-style: normal;
     font-weight: 300;
-    line-height: 1.5em;
+    line-height: 36px; /* 100% */
+  }
+  .text-bold{
+        /* регуляр*/
+        color: var(rgba(0, 0, 0, 1));
+        font-family: "Roboto-bold";
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 36px; /* 100% */
   }
   .nav {
     margin: 5vw;
@@ -938,22 +944,24 @@
   }
 
   /* CONTACTS-PAGE */
-  .contact_page{
+  .contact-page{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 5px;
   }
-  .contact_page_info{
-    display: flex;
-    flex-direction: column;
-  }
-  .contact_page_info_contacts{
+  .contact-page__info{
     display: flex;
     flex-direction: column;
   }
-  .contact_page_info_button {
-    margin-top: 5vh;
+  .contact-page__info-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0vw 10vw 10vw 10vw;
+  }
+  .contact-page__info-button {
+    margin-top: 5vw;
     padding: 15px;
     background: var(--Gray-1, #333);
     color: white;
@@ -963,12 +971,9 @@
     text-transform: uppercase;
     text-decoration: none; /* Убираем подчёркивание */
   }
-  .contact_page_map {
-    display: flex;
-    flex-direction: column;
-    margin: 10vw;
-    width: 50vw;
-    border: 2px solid black;
+  .contact-page__map {
+    width: 100%;
+    border: 2px solid #000;
 
   }
 }
