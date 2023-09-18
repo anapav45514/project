@@ -1,7 +1,7 @@
+/*
 *{
   outline: 1px solid red;
-}
-
+}*/
 
 @font-face {
   font-family: "Roboto";
@@ -25,16 +25,7 @@
     flex-direction: column;
     margin-left: 10vw;
   }
-  .header_h1 {
-    color: var(--Gray-1, #333);
-    font-family: "Roboto-Bold";
-    font-size: 2.5em;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 64px; /* 100% */
-    margin-top: -50px;
-  }
-  .header_h2 {
+  .header__h1 {
     color: var(--Gray-4, #bdbdbd);
     font-family: "Roboto-light";
     font-size: 3em;
@@ -42,7 +33,16 @@
     font-weight: 300;
     line-height: 64px;
   }
-  .header_h3 {
+  .header__h1-bold{
+    color: var(--Gray-1, #333);
+    font-family: "Roboto-Bold";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 100% */
+    margin-top: -50px;
+  }
+  h3 {
     color: var(rgba(0, 0, 0, 1));
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     font-family: "Roboto-Bold";
@@ -52,7 +52,7 @@
     line-height: 64px;
   }
 
-  .text_light {
+  .text-light {
     /* легкий */
     color: var(rgba(0, 0, 0, 1));
     font-family: "Roboto-lihgt";
@@ -61,7 +61,7 @@
     font-weight: 300;
     line-height: 2em; 
   }
-  .text_reg {
+  .text-reg {
     /* регуляр*/
     color: var(rgba(0, 0, 0, 1));
     font-family: "Roboto";
@@ -78,7 +78,7 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  .nav_link {
+  .nav__link {
     position: relative;
     padding: 0 10px;
     color: var(--gray-1, #333);
@@ -92,8 +92,8 @@
     text-decoration: none; /* Убираем подчёркивание */
   }
   /*При наведении добавляются линии над и под ссылкой*/
-  .nav_link:before,
-  .nav_link:after {
+  .nav__link:before,
+  .nav__link:after {
     content: "";
     position: absolute;
     height: 1.5px;
@@ -101,19 +101,19 @@
     background-color: #000;
     transition: 0.3s;
   }
-  .nav_link:after {
+  .nav__link:after {
     left: 0;
     bottom: 15px;
   }
-  .nav_link:before {
+  .nav__link:before {
     right: 0;
     top: -15px;
   }
-  .nav_link:hover {
+  .nav__link:hover {
     color: #000;
   }
-  .nav_link:hover:after,
-  .nav_link:hover:before {
+  .nav__link:hover:after,
+  .nav__link:hover:before {
     width: 100%;
   }
 
@@ -122,44 +122,56 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: start;
     padding: 5vw;
     color: white;
     font-family: "Roboto";
   }
-  .footer_info_link {
-    margin-top: 10px;
+  .footer__logo{
+    margin-top: 1vw;
+  }
+  .footer__info {
+    margin-top: 1vw;
     display: flex;
     flex-direction: column;
-
+    text-align: center;
+  }
+  .footer__info-link{
     color: white;
     font-size: 0.9em;
     line-height: 2em;
     letter-spacing: 0.42px;
     text-decoration: none; /* Убираем подчёркивание */
   }
-  .footer_contact {
+  .footer__contact {
+    margin-top: 1vw;
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
-  .footer_contact_link {
-    display: flex;
-    flex-direction: row;
-  }
-  .footer_contact_link_p {
-    margin-left: 15px;
+  .footer__contact-link {
     color: white;
     font-size: 0.9em;
     line-height: 2em;
     letter-spacing: 0.42px;
+    text-decoration: none; /* Убираем подчёркивание */
   }
-  .footer_social_link {
+  .footer__contact-link > img{
+    padding-right: 1vw;
+  }
+  .footer__social{
+    margin-top: 1vw;
+    text-align: center;
+  }
+  .footer__social-link {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
   }
-  .footer_social_link_img {
-    padding-right: 10px;
+  .footer__social-link > a{
+    padding: 1vw;
   }
+
 
   /* MAIN-PAGE */
   .main {
@@ -266,11 +278,11 @@
     height: 100%;
   }
 
-  .main-prj {
-    
+  .main-prj { 
     margin: 0 10vw 0 10vw;
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .main_prj_img_part1 {
     display: grid;
@@ -380,20 +392,22 @@
   }
 
   /* PROJECT-PAGE */
-  .prj_wrapper {
+  .project-page {
     width: 100vw;
   }
-  .main_prj_wrapper_sections {
-    padding-left: 10vw;
+  .project-page__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10vw 10vw 10vw;
   }
-  .main_prj_wrapper_section {
+  .project-page__wrapper_article {
     margin-bottom: 5vw;
     display: flex;
     align-items: center;
     padding: 0 20px 20px 0;
     background: var(--1, #FBFBFB);
   }
-  .main_prj_wrapper_section__img {
+  .project-page__img {
     width: 40vw;
     padding: 10px;
   }
@@ -462,18 +476,7 @@
   .certifications{
     display: flex;
     flex-direction: column;
-  }
-  .certification_section {
-    margin: 0 10vw 10vw 10vw;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(2, 300px);
-  }
-  .certification_section_img > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 70vh;
   }
 
   /* CONTACTS-PAGE */
@@ -565,10 +568,10 @@
     flex-direction: row;
     justify-content: space-around;
   }
-  .nav_logo{
+  .nav__logo{
     display: none;
   }
-  .nav_link {
+  .nav__link {
     color: var(--gray-1, #333);
     font-family: "Roboto";
     font-size: 0.5em;
@@ -580,8 +583,8 @@
     text-decoration: none; /* Убираем подчёркивание */
   }
   /*При наведении добавляются линии над и под ссылкой*/
-  .nav_link:before,
-  .nav_link:after {
+  .nav__link:before,
+  .nav__link:after {
     content: "";
     position: absolute;
     height: 1.5px;
@@ -589,64 +592,75 @@
     background-color: #000;
     transition: 0.3s;
   }
-  .nav_link:after {
+  .nav__link:after {
     left: 0;
     bottom: 15px;
   }
-  .nav_link:before {
+  .nav__link:before {
     right: 0;
     top: -15px;
   }
-  .nav_link:hover {
+  .nav__link:hover {
     color: #000;
   }
-  .nav_link:hover:after,
-  .nav_link:hover:before {
+  .nav__link:hover:after,
+  .nav__link:hover:before {
     width: 100%;
   }
 
   .footer {
-    padding: 10vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background: #2c2c2c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 5vw;
     color: white;
     font-family: "Roboto";
   }
-  .footer_logo {
+  .footer__logo{
     display: none;
   }
-  .footer_info_link {
-    display: flex;
-    flex-direction: row;
-    color: white;
-    font-size: 0.9em;
-    text-decoration: none; /* Убираем подчёркивание */
-    }
-  .footer_info_link > a{
-    padding-right: 10px;
-  }
-  .footer_contact {
+  .footer__info {
+    margin-top: 1vw;
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
-
-  .footer_contact_link {
-    display: flex;
-    flex-direction: row;
-  }
-  .footer_contact_link_p {
-    margin-left: 15px;
+  .footer__info-link{
     color: white;
     font-size: 0.9em;
+    line-height: 2em;
+    letter-spacing: 0.42px;
+    text-decoration: none; /* Убираем подчёркивание */
   }
-  .footer_social_link {
+  .footer__contact {
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer__contact-link {
+    color: white;
+    font-size: 0.9em;
+    line-height: 2em;
+    letter-spacing: 0.42px;
+    text-decoration: none; /* Убираем подчёркивание */
+  }
+  .footer__contact-link > img{
+    padding-right: 1vw;
+  }
+  .footer__social{
+    margin-top: 1vw;
+    text-align: center;
+  }
+  .footer__social-link {
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
   }
-  .footer_social_link_img {
-    padding-right: 10px;
+  .footer__social-link > a{
+    padding: 1vw;
   }
 
   /* MAIN-PAGE */
@@ -920,17 +934,7 @@
   .certifications{
     display: flex;
     flex-direction: column;
-  }
-  .certification_section {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(2, 300px);
-  }
-  .certification_section_img > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 70vh;
   }
 
   /* CONTACTS-PAGE */
