@@ -26,7 +26,7 @@
     margin-left: 10vw;
   }
   .header__h1 {
-    color: var(--Gray-4, #bdbdbd);
+    color: #bdbdbd;
     font-family: "Roboto-light";
     font-size: 3em;
     font-style: normal;
@@ -34,7 +34,7 @@
     line-height: 64px;
   }
   .header__h1-bold{
-    color: var(--Gray-1, #333);
+    color: #333;
     font-family: "Roboto-Bold";
     font-size: 1em;
     font-style: normal;
@@ -42,9 +42,17 @@
     line-height: 64px; /* 100% */
     margin-top: -50px;
   }
+  .header__h2 {
+    color: #bdbdbd;
+    font-family: "Roboto-light";
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+  }
   .text-light {
     /* легкий */
-    color: var(rgba(0, 0, 0, 1));
+    color: rgba(0, 0, 0, 1);
     font-family: "Roboto-lihgt";
     font-size: 1em;
     font-style: normal;
@@ -53,7 +61,7 @@
   }
   .text-reg {
     /* регуляр*/
-    color: var(rgba(0, 0, 0, 1));
+    color: rgba(0, 0, 0, 1);
     font-family: "Roboto";
     font-size: 1em;
     font-style: normal;
@@ -62,7 +70,7 @@
   }
   .text-bold{
         /* регуляр*/
-        color: var(rgba(0, 0, 0, 1));
+        color: rgba(0, 0, 0, 1);
         font-family: "Roboto-bold";
         font-size: 1em;
         font-style: normal;
@@ -395,59 +403,43 @@
 
   /* PROJECT-PAGE */
   .project-page {
-    width: 100vw;
+    width: 100%;
   }
-  .project-page__wrapper {
+  .project-page__section {
     display: flex;
     flex-direction: column;
     margin: 0 10vw 10vw 10vw;
   }
-  .project-page__wrapper_article {
+  .project-page__sample {
     margin-bottom: 5vw;
     display: flex;
     align-items: center;
     padding: 0 20px 20px 0;
     background: var(--1, #FBFBFB);
   }
-  .project-page__img {
+  .project-page__sample-img {
     width: 40vw;
     padding: 10px;
   }
-  .main_prj_wrapper_section__describtion {
+  .project-page__sample-text {
     width: 43vw;
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .main_prj_wrapper_section__text {
-    width: 35vw;
-    font-family: "Roboto";
-    color: #000;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 25px;
-  }
-  .main_prj_wrapper_info {
-    display: flex;
-  }
-  .main_prj_wrapper_info__link {
+  .project-page__sample-link {
     width: 84px;
     font-family: "Roboto";
     text-decoration: none;
-    color: var(--Gray-1, #333);
+    color: #333;
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
     line-height: 12px; /* 100% */
     letter-spacing: 2.4px;
     text-transform: uppercase;
   }
-  .main_prj_wrapper_info__icon {
-    width: 24px;
-    height: 24px;
-  }
+
 
   /* PROJECT-PAGE SAMPLE 1*/
   .prj_smple_page {
@@ -515,7 +507,6 @@
 
   }
 }
-
 @media screen and (max-width: 959px) {
   /* COMMON STYLE for Navigation and Footer*/
 
@@ -540,6 +531,14 @@
     font-weight: 700;
     line-height: 64px; /* 100% */
     margin-top: -50px;
+  }
+  .header__h2 {
+    color: #bdbdbd;
+    font-family: "Roboto-light";
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
   }
   .text-light {
     /* легкий */
@@ -858,57 +857,45 @@
   }
 
 
+
   /* PROJECT-PAGE */
-  .prj_wrapper {
-    width: 100vw;
+  .project-page {
+    width: 100%;
   }
-  .main_prj_wrapper_sections {
-    padding-left: 10vw;
+  .project-page__section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10vw 10vw 10vw;
   }
-  .main_prj_wrapper_section {
+  .project-page__sample {
     margin-bottom: 5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 20px 20px 0;
     background: var(--1, #FBFBFB);
   }
-  .main_prj_wrapper_section__img {
-    width: 80vw;
-    padding: 5vw 5vw 0 5vw;
+  .project-page__sample-img {
+    width: 70vw;
+    padding: 5vw;
   }
-  .main_prj_wrapper_section__describtion {
-    padding: 5vw 5vw 0 5vw;
+  .project-page__sample-text {
+    padding: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
-  .main_prj_wrapper_section__text {
-    font-family: "Roboto";
-    color: #000;
-    font-size: 1em;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 25px;
-  }
-  .main_prj_wrapper_info {
-    display: flex;
-  }
-  .main_prj_wrapper_info__link {
+  .project-page__sample-link {
     width: 84px;
     font-family: "Roboto";
     text-decoration: none;
-    color: var(--Gray-1, #333);
+    color: #333;
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
     line-height: 12px; /* 100% */
     letter-spacing: 2.4px;
     text-transform: uppercase;
   }
-  .main_prj_wrapper_info__icon {
-    width: 24px;
-    height: 24px;
-  }
+
 
   /* PROJECT-PAGE SAMPLE 1*/
   .prj_smple_page {
