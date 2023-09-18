@@ -1,3 +1,8 @@
+*{
+  outline: 1px solid red;
+}
+
+
 @font-face {
   font-family: "Roboto";
   src: url("fonts/Roboto-Regular.ttf") format("truetype");
@@ -161,7 +166,7 @@
     display: flex;
     flex-direction: column;
   }
-  .main_block {
+  .main-block {
     /* project lorum */
     display: flex;
     flex-direction: row;
@@ -186,12 +191,8 @@
   .main_block_info_pics_nmbrs {
     padding-bottom: 10px;
   }
-  .main_block_img{
-    display: flex;
-    flex-direction: column;
-  }
-  .main_block_img_pic {
-    display: flex;
+  .main-block__img{
+    width: 100%;
   }
   .main_block_img_button_link {
     padding: 15px;
@@ -204,7 +205,7 @@
     text-transform: uppercase;
     text-decoration: none; /* Убираем подчёркивание */
   }
-  .main_abt {
+  .main-abt {
     /* about */
     display: flex;
     flex-direction: row;
@@ -246,7 +247,7 @@
     text-decoration: none; /* Убираем подчёркивание */
   }
 
-  .main_msn {
+  .main-msn {
     /* main mission */
     display: flex;
     flex-direction: column;
@@ -265,7 +266,7 @@
     height: 100%;
   }
 
-  .main_prj {
+  .main-prj {
     
     margin: 0 10vw 0 10vw;
     display: flex;
@@ -303,7 +304,7 @@
     text-transform: uppercase;
     text-decoration: none; /* Убираем подчёркивание */
   }
-  .main_contact {
+  .main-contact {
     margin-top: 25px;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -312,18 +313,15 @@
   }
   .main_contact_form {
     display: grid;
-    grid-template-columns: 30vw 60vw;
+    grid-template-columns: 3fr 7fr;
   }
   .main_contact_form_add {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .main_contact_form_img {
-    display: flex;
+  .main-contact__img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
   /*Parameters for input area*/
   #Name,
@@ -361,23 +359,23 @@
   }
 
   /* GALLERY-PAGE */
-  .gallery_page{
+  .gallery-page{
     display: flex;
     flex-direction: column;
   }
-  .gallery_page_container {
+  .gallery-page__container {
     margin: 0 10vw 10vw 10vw;
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: repeat(2, 300px);
   }
-  .gallery_page_img > img {
+  .gallery-page__img > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .gallery_page_img:first-child {
+  .gallery-page__img:first-child {
     background: #C4C4C4;
   }
 
@@ -656,9 +654,10 @@
     display: flex;
     flex-direction: column;
   }
-  .main_block {
+  .main-block {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
   }
 
   .main_block_info_pics_arrows {
@@ -667,10 +666,8 @@
   .main_block_info_pics_nmbrs {
     display: none;
   }
-  .main_block_img_pic {
-    display: flex;
-    margin-left: 10vw;
-    height: 60vw;
+  .main-block__img{
+    width: 50vw;
   }
   .main_block_img_button_link {
     padding: 15px;
@@ -685,7 +682,7 @@
     text-transform: uppercase;
     text-decoration: none; /* Убираем подчёркивание */
   }
-  .main_abt {
+  .main-abt {
     /* about */
     display: flex;
     flex-direction: row;
@@ -717,8 +714,7 @@
     text-transform: uppercase;
     text-decoration: none; /* Убираем подчёркивание */
   }
-
-  .main_msn {
+  .main-msn {
     /* main mission */
     display: flex;
     flex-direction: column;
@@ -735,7 +731,7 @@
     margin-bottom: 3vw;
   }
 
-  .main_prj {
+  .main-prj {
     display: flex;
     flex-direction: column;
     margin-top: 25px;
@@ -774,7 +770,7 @@
     text-transform: uppercase;
     text-decoration: none; /* Убираем подчёркивание */
   }
-  .main_contact {
+  .main-contact {
     margin: 25px;
     display: flex;
     flex-direction: column;
@@ -784,7 +780,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .main_contact_form_img {
+  .main-contact__img {
     display: none;
   }
   /*Parameters for input area*/
@@ -821,23 +817,23 @@
     text-decoration: none; /* Убираем подчёркивание */
   }
   /* GALLERY-PAGE */
-  .gallery_page{
+  .gallery-page{
     display: flex;
     flex-direction: column;
   }
-  .gallery_page_container {
+  .gallery-page__container {
     margin: 0 10vw 10vw 10vw;
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: repeat(2, 300px);
   }
-  .gallery_page_img > img {
+  .gallery-page__img > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .gallery_page_img:first-child {
+  .gallery-page__img:first-child {
     background: #C4C4C4;
   }
 
