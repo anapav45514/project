@@ -1,7 +1,5 @@
-/*
-*{
-  outline: 1px solid red;
-}*/
+
+/* Подключение шрифтов */
 
 @font-face {
   font-family: "Roboto";
@@ -16,44 +14,17 @@
   src: url("fonts/Roboto-Bold.ttf") format("truetype");
 }
 
-  /* стили для мониторов */
+  /* Общий стиль для большого разрешения */
 
-  /* COMMON STYLE for Navigation and Footer*/
+  /* COMMON STYLE for Navigation, Header and Footer*/
 
-  .header {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10vw;
-  }
-  .header__h1 {
-    color: #bdbdbd;
-    font-family: "Roboto-light";
-    font-size: 3em;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 64px;
-  }
-  .header__h1-bold {
-    color: #333;
-    font-family: "Roboto-Bold";
-    font-size: 1em;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 64px; /* 100% */
-    margin-top: -50px;
-  }
-  .header__h2 {
-    color: #bdbdbd;
-    font-family: "Roboto-light";
-    font-size: 3em;
-    font-weight: 300;
-  }
   .text-light {
     /* легкий */
     color: rgba(0, 0, 0, 1);
-    font-family: "Roboto-lihgt";
+    font-family: "Roboto-light";
     font-size: 1em;
     line-height: 2em;
+    text-decoration: none; /* Убираем подчёркивание */
   }
   .text-reg {
     /* регуляр*/
@@ -70,30 +41,60 @@
     font-weight: 300;
     line-height: 36px; /* 100% */
   }
+  .text-bold-black {
+    color: black;
+    font-family: "Roboto-bold";
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 36px; /* 100% */
+  }
   .light-number {
     /* легкий */
     color: rgba(242, 242, 242, 1);
-    font-family: "Roboto-lihgt";
+    font-family: "Roboto-light";
     font-size: 4em;
   }
-  .text-number {
-    color: rgba(242, 242, 242, 1);
-    font-family: "Roboto-bold";
-    font-size: 64px;
-    padding: 2vw;
-    max-width: 70%;
+  .header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
   }
+  .header__h1 {
+    color: #bdbdbd;
+    font-family: "Roboto-light";
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+  }
+  .header__h1-bold {
+    color: #333;
+    font-family: "Roboto-bold";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 100% */
+    margin-top: -50px;
+  }
+  .header-h2 {
+    color: #bdbdbd;
+    font-family: "Roboto-light";
+    font-size: 3em;
+    font-weight: 300;
+  }
+
   .nav {
     
     margin: 0 10vw 0 10vw;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .nav__logo {
     width: 100px;
-    margin-right: 100px;
+    padding-top: 15px;
+    padding-right: 200px;
   }
   .nav__link {
     position: relative;
@@ -106,6 +107,7 @@
     text-transform: uppercase;
     text-decoration: none; /* Убираем подчёркивание */
   }
+
   /*При наведении добавляются линии над и под ссылкой*/
   .nav__link:before,
   .nav__link:after {
@@ -189,8 +191,9 @@
 
   /* MAIN-PAGE */
 
+  /* Main Block */
+
   .main-block {
-    /* project lorum */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -214,7 +217,6 @@
     margin-left: 10vw;
   }
   .main-block__img{
-    
     margin: 0 10vw 0 10vw;
   }
   .main-block__img-big {
@@ -222,7 +224,7 @@
   }
   .main-block__button {
     padding: 15px;
-    background: var(--Gray-1, #ffffff);
+    background: white;
     color: rgba(51, 51, 51, 1);
     font-family: "Roboto";
     font-size: 0.8em;
@@ -231,6 +233,8 @@
     text-transform: uppercase;
     text-decoration: none; /* Убираем подчёркивание */
   }
+
+  /* Block About Company*/
 
   .main-abt {
     /* about */
@@ -270,6 +274,8 @@
     text-decoration: none; /* Убираем подчёркивание */
   }
 
+  /* Main Focus/Mission Block */
+
   .main-msn {
     /* main mission */
     margin: 0 10vw 0 10vw;
@@ -281,6 +287,11 @@
     flex-direction: row;
     align-items: center;
   }
+  .main-msn__txt > img{
+    padding-right: 3vw;
+  }
+
+  /* Project Block */
 
   .main-prj {
     margin: 0 10vw 0 10vw;
@@ -317,6 +328,8 @@
     text-transform: uppercase;
     text-decoration: none; /* Убираем подчёркивание */
   }
+
+  /* Contact Block */
 
   .main-contact {
     margin-top: 25px;
@@ -372,6 +385,7 @@
   }
 
   /* GALLERY-PAGE */
+
   .gallery-page {
     display: flex;
     flex-direction: column;
@@ -432,6 +446,7 @@
   }
 
   /* PROJECT-PAGE SAMPLE 1*/
+
   .prj-smple {
     display: flex;
     flex-direction: column;
@@ -459,6 +474,7 @@
   }
 
   /* CERTIFICATIONS-PAGE */
+
   .certifications {
     display: flex;
     flex-direction: column;
@@ -466,6 +482,7 @@
   }
 
   /* CONTACTS-PAGE */
+  
   .contact-page {
     display: flex;
     flex-direction: row;
@@ -499,73 +516,8 @@
   }
 
 @media screen and (max-width: 959px) {
-  /* COMMON STYLE for Navigation and Footer*/
-
-  .header {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10vw;
-  }
-  .header__h1 {
-    color: #bdbdbd;
-    font-family: "Roboto-light";
-    font-size: 3em;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 64px;
-  }
-  .header__h1-bold {
-    color: #333;
-    font-family: "Roboto-Bold";
-    font-size: 1em;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 64px; /* 100% */
-    margin-top: -50px;
-  }
-  .header__h2 {
-    color: #bdbdbd;
-    font-family: "Roboto-light";
-    font-size: 3em;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 64px;
-  }
-  .text-light {
-    /* легкий */
-    color: rgba(0, 0, 0, 1);
-    font-family: "Roboto-lihgt";
-    font-size: 1em;
-    line-height: 2em;
-  }
-  .text-reg {
-    /* регуляр*/
-    color: rgba(0, 0, 0, 1);
-    font-family: "Roboto";
-    font-size: 1em;
-    line-height: 36px; /* 100% */
-    max-width: 90%;
-  }
-  .text-bold {
-    color: white;
-    font-family: "Roboto-bold";
-    font-size: 1em;
-    font-weight: 300;
-    line-height: 36px; /* 100% */
-  }
-  .light-number {
-    /* легкий */
-    color: rgba(242, 242, 242, 1);
-    font-family: "Roboto-lihgt";
-    font-size: 4em;
-  }
-  .text-number {
-    color: rgba(242, 242, 242, 1);
-    font-family: "Roboto-bold";
-    font-size: 64px;
-    padding: 2vw;
-  }
-
+  /* COMMON STYLE for Navigation, Header and Footer*/
+  
   .nav {
     
     margin: 5vw 10vw 5vw 10vw;
@@ -577,103 +529,18 @@
   .nav__logo {
     display: none;
   }
-  .nav__link {
-    position: relative;
-    color: #333;
-    font-family: "Roboto";
-    font-size: 0.7em;
-    font-weight: 400;
-    line-height: 0.7em; /* 100% */
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    text-decoration: none; /* Убираем подчёркивание */
-  }
-  /*При наведении добавляются линии над и под ссылкой*/
-  .nav__link:before,
-  .nav__link:after {
-    content: "";
-    position: absolute;
-    height: 1.5px;
-    width: 0;
-    background-color: #000;
-    transition: 0.3s;
-  }
-  .nav__link:after {
-    left: 0;
-    bottom: -10px;
-  }
-  .nav__link:before {
-    right: 0;
-    top: -10px;
-  }
-  .nav__link:hover {
-    color: #000;
-  }
-  .nav__link:hover:after,
-  .nav__link:hover:before {
-    width: 100%;
-  }
 
-  .footer {
-    background: #2c2c2c;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-    padding: 5vw;
-    color: white;
-    font-family: "Roboto";
-  }
   .footer__logo {
     display: none;
   }
-  .footer__info {
-    margin-top: 1vw;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .footer__info-link {
-    color: white;
-    font-size: 0.9em;
-    line-height: 2em;
-    letter-spacing: 0.42px;
-    text-decoration: none; /* Убираем подчёркивание */
-  }
-  .footer__contact {
-    margin-top: 1vw;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .footer__contact-link {
-    color: white;
-    font-size: 0.9em;
-    line-height: 2em;
-    letter-spacing: 0.42px;
-    text-decoration: none; /* Убираем подчёркивание */
-  }
-  .footer__contact-link > img {
-    padding-right: 1vw;
-  }
-  .footer__social {
-    margin-top: 1vw;
-    text-align: center;
-  }
-  .footer__social-link {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-  }
-  .footer__social-link > a {
-    padding: 1vw;
-  }
+
 
   /* MAIN-PAGE */
   .main-block {
     /* project lorum */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+
   }
   .main-block__info-arrow{
     display: none;
@@ -681,8 +548,23 @@
   .main-block__info-num {
     display: none;
   }
+  .main-block__img{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
   .main-block__img-big {
-    height: 70vw;
+    width: 100%;
+  }
+  .main-block__button {
+    padding: 10px;
+    background: #ffffff;
+    color: rgba(51, 51, 51, 1);
+    font-family: "Roboto";
+    font-size: 0.7em;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    text-decoration: none; /* Убираем подчёркивание */
   }
 
   .main-abt {
@@ -705,7 +587,6 @@
   }
 
   .main-msn {
-    /* main mission */
     margin: 0 10vw 0 10vw;
     display: flex;
     flex-direction: column;
@@ -713,7 +594,10 @@
   .main-msn__txt {
     display: flex;
     flex-direction: column;
-    
+    align-items: start;
+  }
+  .main-msn__txt > img{
+    padding-right: 3vw;
   }
 
   .main-prj__box2 {
