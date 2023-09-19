@@ -46,17 +46,13 @@
     color: #bdbdbd;
     font-family: "Roboto-light";
     font-size: 3em;
-    font-style: normal;
     font-weight: 300;
-    line-height: 64px;
   }
   .text-light {
     /* легкий */
     color: rgba(0, 0, 0, 1);
     font-family: "Roboto-lihgt";
     font-size: 1em;
-    font-style: normal;
-    font-weight: 300;
     line-height: 2em;
   }
   .text-reg {
@@ -64,15 +60,13 @@
     color: rgba(0, 0, 0, 1);
     font-family: "Roboto";
     font-size: 1em;
-    font-style: normal;
-    font-weight: 300;
     line-height: 36px; /* 100% */
+    max-width: 70%;
   }
   .text-bold {
     color: white;
     font-family: "Roboto-bold";
     font-size: 1em;
-    font-style: normal;
     font-weight: 300;
     line-height: 36px; /* 100% */
   }
@@ -85,8 +79,9 @@
   .text-number {
     color: rgba(242, 242, 242, 1);
     font-family: "Roboto-bold";
-    font-size: 7em;
-    padding-right: 3vw;
+    font-size: 64px;
+    padding: 2vw;
+    max-width: 70%;
   }
   .nav {
     
@@ -542,33 +537,36 @@
     color: rgba(0, 0, 0, 1);
     font-family: "Roboto-lihgt";
     font-size: 1em;
-    font-style: normal;
-    font-weight: 300;
     line-height: 2em;
   }
   .text-reg {
     /* регуляр*/
-    color:rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 1);
     font-family: "Roboto";
     font-size: 1em;
-    font-style: normal;
-    font-weight: 300;
     line-height: 36px; /* 100% */
+    max-width: 90%;
   }
   .text-bold {
     color: white;
     font-family: "Roboto-bold";
     font-size: 1em;
-    font-style: normal;
     font-weight: 300;
     line-height: 36px; /* 100% */
+  }
+  .light-number {
+    /* легкий */
+    color: rgba(242, 242, 242, 1);
+    font-family: "Roboto-lihgt";
+    font-size: 4em;
   }
   .text-number {
     color: rgba(242, 242, 242, 1);
     font-family: "Roboto-bold";
-    font-size: 7em;
-    padding-right: 3vw;
+    font-size: 64px;
+    padding: 2vw;
   }
+
   .nav {
     
     margin: 5vw 10vw 5vw 10vw;
@@ -716,7 +714,7 @@
   .main-msn__txt {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    
   }
 
   .main-prj__box2 {
