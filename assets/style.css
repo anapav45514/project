@@ -1,7 +1,7 @@
-
+/*
 *{
   outline: 1px solid red;
-}
+}*/
 
 @font-face {
   font-family: "Roboto";
@@ -15,7 +15,7 @@
   font-family: "Roboto-bold";
   src: url("fonts/Roboto-Bold.ttf") format("truetype");
 }
-@media screen and (min-width: 960px) {
+
   /* стили для мониторов */
 
   /* COMMON STYLE for Navigation and Footer*/
@@ -69,13 +69,18 @@
     line-height: 36px; /* 100% */
   }
   .text-bold {
-    /* регуляр*/
-    color: rgba(0, 0, 0, 1);
+    color: white;
     font-family: "Roboto-bold";
     font-size: 1em;
     font-style: normal;
     font-weight: 300;
     line-height: 36px; /* 100% */
+  }
+  .light-number {
+    /* легкий */
+    color: rgba(242, 242, 242, 1);
+    font-family: "Roboto-lihgt";
+    font-size: 4em;
   }
   .text-number {
     color: rgba(242, 242, 242, 1);
@@ -84,20 +89,20 @@
     padding-right: 3vw;
   }
   .nav {
-    margin-top: 25px;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    
+    margin: 0 10vw 0 10vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
   }
   .nav__logo {
-    margin-right: 30vw;
+    width: 100px;
+    margin-right: 100px;
   }
   .nav__link {
     position: relative;
-    padding: 0 10px;
-    color: var(--gray-1, #333);
+    color: #333;
     font-family: "Roboto";
     font-size: 0.7em;
     font-style: normal;
@@ -119,11 +124,11 @@
   }
   .nav__link:after {
     left: 0;
-    bottom: 15px;
+    bottom: -10px;
   }
   .nav__link:before {
     right: 0;
-    top: -15px;
+    top: -10px;
   }
   .nav__link:hover {
     color: #000;
@@ -189,15 +194,13 @@
   }
 
   /* MAIN-PAGE */
-  .main {
-    display: flex;
-    flex-direction: column;
-  }
+
   .main-block {
     /* project lorum */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
   .main_block_info {
     display: flex;
@@ -205,23 +208,25 @@
     align-content: start;
     justify-content: space-around;
   }
-  .main_block_info_pics {
-    margin-left: 10vw;
-  }
-  .main_block_info_pics_arrows {
+  .main-block__info-arrow{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 10vw;
+    margin: 0 10vw 0 10vw;
     padding-bottom: 5vw;
   }
-  .main_block_info_pics_nmbrs {
+  .main-block__info-num {
     padding-bottom: 10px;
+    margin-left: 10vw;
   }
-  .main-block__img {
+  .main-block__img{
+    
+    margin: 0 10vw 0 10vw;
+  }
+  .main-block__img-big {
     width: 100%;
   }
-  .main_block_img_button_link {
+  .main-block__button {
     padding: 15px;
     background: var(--Gray-1, #ffffff);
     color: rgba(51, 51, 51, 1);
@@ -232,37 +237,35 @@
     text-transform: uppercase;
     text-decoration: none; /* Убираем подчёркивание */
   }
+
   .main-abt {
     /* about */
     display: flex;
     flex-direction: row;
-    margin-left: 10vw;
-    margin-top: 5vw;
+    align-items: center;
+    margin: 5vw 10vw 0 10vw;
     background-color: rgba(251, 251, 251, 1);
   }
-  .main_abt_img_block1 {
+  .main-abt__img-box {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     padding: 3vw 3vw 3vw 3vw;
   }
-  .main_abt_img_block1 > div > img {
-    padding-bottom: 15px;
+  .main-abt__img-box > img {
+    padding-bottom: 3vw;
   }
-  .main_abt_img_block2 {
-    display: flex;
-    flex-direction: column;
-    padding-top: 5vw;
+  .main-abt__img {
+    padding-top: 3vw;
   }
-  .main_abt_txt {
+  .main-abt__txt {
     display: flex;
     flex-direction: column;
     justify-content: start;
     padding: 3vw 3vw 3vw 3vw;
   }
-  .main_abt_button {
+  .main-abt__link {
     margin-top: 2vw;
-  }
-  .main_abt_button_link {
     padding: 15px;
     background: var(--Gray-1, #ffffff);
     color: rgba(51, 51, 51, 1);
@@ -283,7 +286,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
   }
 
   .main-prj {
@@ -410,7 +412,7 @@
     display: flex;
     align-items: center;
     padding: 0 20px 20px 0;
-    background: var(--1, #fbfbfb);
+    background: #fbfbfb;
   }
   .project-page__sample-img {
     width: 40vw;
@@ -436,27 +438,29 @@
   }
 
   /* PROJECT-PAGE SAMPLE 1*/
-  .prj_smple_page {
+  .prj-smple {
     display: flex;
     flex-direction: column;
   }
-  .prj_smpl_page_main_section {
+  .prj-smpl__section {
     display: flex;
     flex-direction: column;
     margin: 0vw 10vw 5vw 10vw;
   }
-  .prj_smpl_page_main_section_img1 {
+  .prj-smpl__img1 {
     padding-bottom: 1vw;
   }
-  .prj_smpl_page_main_section_discription {
+  .prj-smpl__box {
     display: flex;
     flex-direction: row;
     padding-bottom: 1vw;
   }
-  .prj_smpl_page_main_section_img2 {
+  .prj-smpl__img2 {
+    width: 100%;
+    height: 100%;
     padding-right: 1vw;
   }
-  .prj_smpl_page_main_section_img3 {
+  .prj-smpl__img3 {
     padding-bottom: 1vw;
   }
 
@@ -499,7 +503,7 @@
     border: 2px solid #000;
     margin: 3vw 0vw 3vw 3vw;
   }
-}
+
 @media screen and (max-width: 959px) {
   /* COMMON STYLE for Navigation and Footer*/
 
@@ -509,7 +513,7 @@
     margin-left: 10vw;
   }
   .header__h1 {
-    color: var(--Gray-4, #bdbdbd);
+    color: #bdbdbd;
     font-family: "Roboto-light";
     font-size: 3em;
     font-style: normal;
@@ -517,7 +521,7 @@
     line-height: 64px;
   }
   .header__h1-bold {
-    color: var(--Gray-1, #333);
+    color: #333;
     font-family: "Roboto-Bold";
     font-size: 1em;
     font-style: normal;
@@ -535,7 +539,7 @@
   }
   .text-light {
     /* легкий */
-    color: var(rgba(0, 0, 0, 1));
+    color: rgba(0, 0, 0, 1);
     font-family: "Roboto-lihgt";
     font-size: 1em;
     font-style: normal;
@@ -544,7 +548,7 @@
   }
   .text-reg {
     /* регуляр*/
-    color: var(rgba(0, 0, 0, 1));
+    color:rgba(0, 0, 0, 1);
     font-family: "Roboto";
     font-size: 1em;
     font-style: normal;
@@ -552,8 +556,7 @@
     line-height: 36px; /* 100% */
   }
   .text-bold {
-    /* регуляр*/
-    color: var(rgba(0, 0, 0, 1));
+    color: white;
     font-family: "Roboto-bold";
     font-size: 1em;
     font-style: normal;
@@ -564,22 +567,24 @@
     color: rgba(242, 242, 242, 1);
     font-family: "Roboto-bold";
     font-size: 7em;
-    padding-right: vw;
+    padding-right: 3vw;
   }
   .nav {
-    margin: 5vw;
+    
+    margin: 5vw 10vw 5vw 10vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
   }
   .nav__logo {
     display: none;
   }
   .nav__link {
-    color: var(--gray-1, #333);
+    position: relative;
+    color: #333;
     font-family: "Roboto";
-    font-size: 0.5em;
-    font-style: normal;
+    font-size: 0.7em;
     font-weight: 400;
     line-height: 0.7em; /* 100% */
     letter-spacing: 0.1em;
@@ -598,11 +603,11 @@
   }
   .nav__link:after {
     left: 0;
-    bottom: 15px;
+    bottom: -10px;
   }
   .nav__link:before {
     right: 0;
-    top: -15px;
+    top: -10px;
   }
   .nav__link:hover {
     color: #000;
@@ -668,70 +673,40 @@
   }
 
   /* MAIN-PAGE */
-  .main {
-    display: flex;
-    flex-direction: column;
-  }
   .main-block {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .main_block_info_pics_arrows {
-    display: none;
-  }
-  .main_block_info_pics_nmbrs {
-    display: none;
-  }
-  .main-block__img {
-    width: 50vw;
-  }
-  .main_block_img_button_link {
-    padding: 15px;
-
-    margin-left: 10vw;
-    background: var(--Gray-1, #ffffff);
-    color: rgba(51, 51, 51, 1);
-    font-family: "Roboto";
-    font-size: 0.8em;
-    letter-spacing: 2.4px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none; /* Убираем подчёркивание */
-  }
-  .main-abt {
-    /* about */
-    display: flex;
-    flex-direction: row;
-    margin-left: 10vw;
-    margin-top: 5vw;
-    background-color: rgba(251, 251, 251, 1);
-  }
-  .main_abt_img_block1 {
-    display: none;
-  }
-  .main_abt_img_block2 {
-    display: none;
-  }
-  .main_abt_txt {
+    /* project lorum */
     display: flex;
     flex-direction: column;
-    padding: 3vw 3vw 3vw 3vw;
   }
-  .main_abt_button {
-    margin-top: 5vw;
+  .main-block__info-arrow{
+    display: none;
   }
-  .main_abt_button_link {
-    padding: 15px;
-    background: var(--Gray-1, #ffffff);
-    color: rgba(51, 51, 51, 1);
-    font-family: "Roboto";
-    font-size: 0.8em;
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-    text-decoration: none; /* Убираем подчёркивание */
+  .main-block__info-num {
+    display: none;
   }
+  .main-block__img-big {
+    height: 70vw;
+  }
+
+  .main-abt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vw 10vw 0 10vw;
+  }
+  .main-abt__img-box > img {
+    display: none;
+  }
+  .main-abt__img {
+    display: none;
+  }
+  .main-abt__txt {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 3vw 0vw 3vw 3vw;
+  }
+
   .main-msn {
     /* main mission */
     margin: 0 10vw 0 10vw;
@@ -740,54 +715,18 @@
   }
   .main-msn__txt {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: start;
   }
 
-  .main-prj {
-    margin: 0 10vw 0 10vw;
-    display: flex;
-    flex-direction: column;
-  }
-  .main-prj__box1 {
-    display: grid;
-    margin-bottom: 15px;
-    grid-gap: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: repeat(1, 300px);
-  }
   .main-prj__box2 {
     display: grid;
     grid-gap: 15px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: repeat(1, 300px);
   }
-  .main-prj__img-pic > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .main-prj__button {
-    margin-top: 15px;
-    align-self: end;
-    padding: 15px;
-    background: #333;
-    color: white;
-    font-family: "Roboto";
-    font-size: 0.8em;
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-    text-decoration: none; /* Убираем подчёркивание */
-  }
 
-  .main-contact {
-    margin-top: 25px;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    display: flex;
-    flex-direction: column;
-  }
+
   .main-contact__form {
     display: grid;
     grid-template-columns: 1fr;
@@ -797,125 +736,56 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .main-contact__button {
-    align-self: start;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    padding: 15px;
-    background: #333;
-    color: white;
-    font-family: "Roboto";
-    font-size: 0.8em;
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-    text-decoration: none; /* Убираем подчёркивание */
-  }
   .main-contact__img {
     display: none;
   }
-  /*Parameters for input area*/
-  #Name,
-  #Number,
-  #Email,
-  #addText {
-    padding: 1vw;
-  }
-  #Textarea {
-    padding: 1vw;
-  }
-  .form-control {
-    color: #8d8d8d;
-    font-family: Roboto;
-    font-size: 0.9em;
-    border: none;
-    margin-top: 0.5vw;
-    margin-bottom: 0.5vw;
-    margin-right: 0.5vw;
-    background: #f3f3f3;
-  }
+
 
   /* GALLERY-PAGE */
-  .gallery-page {
-    display: flex;
-    flex-direction: column;
-  }
-  .gallery-page__container {
-    margin: 0 10vw 10vw 10vw;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(2, 300px);
-  }
-  .gallery-page__img > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .gallery-page__img:first-child {
-    background: #c4c4c4;
-  }
+
 
   /* PROJECT-PAGE */
-  .project-page {
-    width: 100%;
-  }
-  .project-page__section {
-    display: flex;
-    flex-direction: column;
-    margin: 0 10vw 10vw 10vw;
-  }
+
   .project-page__sample {
     margin-bottom: 5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--1, #fbfbfb);
+    background: #fbfbfb;
   }
   .project-page__sample-img {
-    width: 70vw;
-    padding: 5vw;
+    width: 50vw;
   }
   .project-page__sample-text {
-    padding: 30px;
+    padding: 3vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  .project-page__sample-link {
-    width: 84px;
-    font-family: "Roboto";
-    text-decoration: none;
-    color: #333;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 12px; /* 100% */
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-  }
 
   /* PROJECT-PAGE SAMPLE 1*/
-  .prj_smple_page {
+  .prj-smple {
     display: flex;
     flex-direction: column;
   }
-  .prj_smpl_page_main_section {
+  .prj-smpl__section {
     display: flex;
     flex-direction: column;
     margin: 0vw 10vw 5vw 10vw;
   }
-  .prj_smpl_page_main_section_img1 {
+  .prj-smpl__img1 {
     padding-bottom: 1vw;
   }
-  .prj_smpl_page_main_section_discription {
+  .prj-smpl__box {
     display: flex;
     flex-direction: row;
     padding-top: 2vw;
     padding-bottom: 2vw;
   }
-  .prj_smpl_page_main_section_img2 {
+  .prj-smpl__img2 {
     display: none;
   }
-  .prj_smpl_page_main_section_img3 {
+  .prj-smpl__img3 {
     padding-bottom: 1vw;
   }
 
@@ -930,32 +800,14 @@
   .contact-page {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 5px;
-  }
-  .contact-page__info {
-    display: flex;
-    flex-direction: column;
-  }
-  .contact-page__info-link {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 0vw 10vw 10vw 10vw;
-  }
-  .contact-page__info-button {
-    margin-top: 5vw;
-    padding: 15px;
-    background: var(--Gray-1, #333);
-    color: white;
-    font-family: "Roboto";
-    font-size: 0.8em;
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-    text-decoration: none; /* Убираем подчёркивание */
+    justify-content: start;
+    align-items: start;
   }
   .contact-page__map {
-    width: 100%;
+    position: relative;
+    width: 70vw;
     border: 2px solid #000;
+    
+    margin: 0vw 10vw 5vw 10vw;
   }
 }
