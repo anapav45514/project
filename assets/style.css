@@ -529,11 +529,38 @@
   .nav__logo {
     display: none;
   }
-
+  .footer {
+    background: #2c2c2c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
   .footer__logo {
     display: none;
   }
-
+  .footer__info {
+    text-align: center;
+  }
+  .footer__info-link {
+    line-height: 1.5em;
+  }
+  .footer__contact {
+    text-align: center;
+  }
+  .footer__contact-link {
+    line-height: 1.5em;
+  }
+  .footer__social {
+    text-align: center;
+  }
+  .footer__social-link {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer__social-link > a {
+    padding: 1vw;
+  }
 
   /* MAIN-PAGE */
   .main-block {
@@ -624,7 +651,6 @@
 
   /* GALLERY-PAGE */
 
-
   /* PROJECT-PAGE */
 
   .project-page__sample {
@@ -688,7 +714,6 @@
     position: relative;
     width: 70vw;
     border: 2px solid #000;
-    
     margin: 0vw 10vw 5vw 10vw;
   }
 }
